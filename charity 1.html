@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Charity Fundraising</h1>
+    </header>
+    <main>
+        <section id="account-section">
+            <h2>Create Account</h2>
+            <form id="create-account-form">
+                <input type="text" id="account-address" placeholder="Account Address" required>
+                <input type="number" id="initial-balance" placeholder="Initial Balance" required>
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+
+        <section id="donation-section">
+            <h2>Make a Donation</h2>
+            <form id="donation-form">
+                <input type="text" id="donor-address" placeholder="Donor Address" required>
+                <input type="number" id="donation-amount" placeholder="Donation Amount" required>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+
+        <section id="withdraw-section">
+            <h2>Withdraw Funds</h2>
+            <form id="withdraw-form">
+                <input type="text" id="withdraw-address" placeholder="Account Address" required>
+                <input type="number" id="withdraw-amount" placeholder="Withdrawal Amount" required>
+                <button type="submit">Withdraw</button>
+            </form>
+        </section>
+
+        <section id="balance-section">
+            <h2>Check Balance</h2>
+            <form id="balance-form">
+                <input type="text" id="balance-address" placeholder="Account Address" required>
+                <button type="submit">Get Balance</button>
+            </form>
+            <p id="balance-result"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
